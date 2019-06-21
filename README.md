@@ -5,7 +5,7 @@ It appears that you are running Sleuth from within Rstudio.
 Because of concerns with forking processes from a GUI, 'num_cores' is being set to 1.
 ```
 
-Removing this check has not caused any problems and speeds up my analyses significantly
+Removing this check has not caused any problems and speeds up my analyses significantly. When you run `sleuth_prep` with this version of sleuth, it may appear to hang at the `summarizing bootstraps` stage, but it will eventually respond.
 
 # sleuth
 
