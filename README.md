@@ -1,3 +1,12 @@
+This repo is a version of sleuth that allows multicore operation within Rstudio. Regular sleuth refuses to use multiple cores when run within Rstudio with the following error message:
+
+```
+It appears that you are running Sleuth from within Rstudio.
+Because of concerns with forking processes from a GUI, 'num_cores' is being set to 1.
+```
+
+Removing this check has not caused any problems and speeds up my analyses significantly
+
 # sleuth
 
 __sleuth__ is a program for differential analysis of RNA-Seq data. It makes use of quantification uncertainty estimates obtained via [kallisto](https://github.com/pimentel/kallisto) for accurate differential analysis of isoforms or genes, allows testing in the context of experiments with complex designs, and supports interactive exploratory data analysis via __sleuth live__. The sleuth methods are described in
